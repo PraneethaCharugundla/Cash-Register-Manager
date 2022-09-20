@@ -8,13 +8,13 @@
     <title>Cash Register</title>
 </head>
 <body>
-    <div class="container">
+    <main class="container">
         <h1 class="heading">Cash Register Manager </h1>
             <p class="description">Enter the bill amount and cash given by the customer
                  and know minimum number of notes to return</p>
-            <label for = "bill-amount">Bill Amount:</label>
+            <label for = "bill-amount"  >Bill Amount:</label>
             <input id="bill-amount" type="text" />
-            <label for = "cash-given">Cash Given:</label>
+            <label for = "cash-given"  >Cash Given:</label>
             <input id="cash-given" type="text" />
             <button id="check-button" >Check</button>
              <p id="error-message"></p>
@@ -24,7 +24,6 @@
                 </caption>
                 <tr>
                     <th> No of Notes</th>
-                    <td></td>
                   <td class="no-of-notes"></td>
                   <td class="no-of-notes"></td>
                   <td class="no-of-notes"></td>
@@ -46,6 +45,21 @@
             </table>
 
         </div>
+        </main>
+    }
+    <footer>
+        <p>© | 2022 | Praneetha </p>
+        <div id="socials" ><span><a href="https://github.com/PraneethaCharugundla"><img src="https://img.icons8.com/windows/32/000000/github.png"/>
+
+        </a></span>
+      <span><a href="https://www.linkedin.com/in/praneetha-charugundla-b63ba3249/"><img src="https://img.icons8.com/ios-filled/32/000000/linkedin-circled--v1.png"/>
+
+        </a></span>
+      <span><a href="https://dev.to/praneethacharugundla"><img src="https://img.icons8.com/windows/32/000000/dev.png"/>
+
+        </a></span>
+    </div>
+  </footer>
 </body>
 <script src="./index.js"></script>
 </html>

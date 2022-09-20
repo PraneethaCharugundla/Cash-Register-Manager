@@ -25,9 +25,9 @@ checkButton.addEventListener("click" , function validateBillAndCashAmount(){
 
 });
  function caluclateChnage (amountToBeReturned){
-    for( let i=0 ; i = availableNotes.length ; i ++) {
+   for( let i=0 ; i < availableNotes.length ; i ++) {
         const numberOfNotes = Math.trunc (
-            amountToBeReturned.value / availableNotes[i]);
+            amountToBeReturned / availableNotes[i]);
 
             amountToBeReturned %= availableNotes[i];
             noOfNotes[i].innerText  = numberOfNotes;
