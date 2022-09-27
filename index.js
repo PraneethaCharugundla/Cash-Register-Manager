@@ -7,25 +7,32 @@ const availableNotes  = [2000, 500, 100 , 20 , 10 ,5 ,1 ];
 
 checkButton.addEventListener("click" , function validateBillAndCashAmount(){
  hideMessage();
-    if(billAmount.value > 0 ){
-        if(cashGiven.value >= billAmount.value ) {
-            const amountToBeReturned  = cashGiven.value - billAmount.value;
-            caluclateChnage(amountToBeReturned); 
-        }
-        else{
-              showMessage("Do you wanna wash plates?");
+ 
 
-        }
+  console.log(billAmount.value);
+  console.log(cashGiven.value)
+
+    if(Number(cashGiven.value) >= Number( billAmount.value)  && Number(billAmount.value) > 0) {
+
+
+      console.log(cashGiven.value >= billAmount.value  && billAmount.value > 0)
+        const amountToBeReturned  = cashGiven.value - billAmount.value;
+        caluclateChange(amountToBeReturned); 
+
     }
-    else
-    {
-      showMessage("Invalid Bill Amount");
-        
+    else{
+          showMessage("Do you wanna wash plates?");
+                 caluclateChange(0); 
+
     }
+
+
+
 
 });
- function caluclateChnage (amountToBeReturned){
+ function caluclateChange (amountToBeReturned){
    for( let i=0 ; i < availableNotes.length ; i ++) {
+       noOfNotes[i].innerHTML  = "";
         const numberOfNotes = Math.trunc (
             amountToBeReturned / availableNotes[i]);
 
@@ -44,7 +51,3 @@ function showMessage(msg){
     message.style.display = "block";
     message.innerText = msg;
 }
-
-
-
-
