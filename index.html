@@ -12,41 +12,48 @@
         <h1 class="heading">Cash Register Manager </h1>
             <p class="description">Enter the bill amount and cash given by the customer
                  and know minimum number of notes to return</p>
-            <label for = "bill-amount"  >Bill Amount:</label>
-            <input id="bill-amount" type="text" />
-            <label for = "cash-given"  >Cash Given:</label>
-            <input id="cash-given" type="text" />
-            <button id="check-button" >Check</button>
-             <p id="error-message"></p>
-            <table class="change-table">
-                <caption>
-                    Return Change
-                </caption>
-                <tr>
-                    <th> No of Notes</th>
-                  <td class="no-of-notes"></td>
-                  <td class="no-of-notes"></td>
-                  <td class="no-of-notes"></td>
-                  <td class="no-of-notes"></td>
-                  <td class="no-of-notes"></td>
-                  <td class="no-of-notes"></td>
-                  <td class="no-of-notes"></td>
-                </tr>
-                <tr>
-                    <th>Note</th>
-                    <td>2000</td>
-                    <td>500</td>
-                    <td>100</td>
-                    <td>20</td>
-                    <td>10</td>
-                    <td>5</td>
-                    <td>1</td>
-                </tr>
-            </table>
+            <label for = "bill-amount"  >Bill Amount:</label> <br>
+            <input id="bill-amount" type="number" /> <br>
+            <button id="proceed">PROCEED</button>
+                       <p id="message-one"></p>
 
-        </div>
-        </main>
-    }
+             <div id="toggle-element">
+                <label for = "cash-given"  >Cash Given:</label> <br>
+                <input id="cash-given" type="number" /> <br>
+                <button id="check-button" >Check</button>
+               
+                <table class="change-table">
+                    <caption>
+                        Return Change
+                    </caption>
+                    <tr>
+                        <th> No of Notes</th>
+                      <td class="no-of-notes"></td>
+                      <td class="no-of-notes"></td>
+                      <td class="no-of-notes"></td>
+                      <td class="no-of-notes"></td>
+                      <td class="no-of-notes"></td>
+                      <td class="no-of-notes"></td>
+                      <td class="no-of-notes"></td>
+                    </tr>
+                    <tr>
+                        <th>Note</th>
+                        <td>2000</td>
+                        <td>500</td>
+                        <td>100</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+                <p id="message-two"></p>
+    
+            </div>
+            </main>
+        
+             </div>
+         
     <footer>
         <p>© | 2022 | Praneetha </p>
         <div id="socials" ><span><a href="https://github.com/PraneethaCharugundla"><img src="https://img.icons8.com/windows/32/000000/github.png"/>

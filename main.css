@@ -4,10 +4,8 @@ html, body {
 }
 body {
   font-family: sans-serif;
-  background-color: #fb923c
-;
-}
-* {
+  background-color: #fb923c;
+
 }
 .container {
   margin: 4rem auto 7rem;
@@ -51,7 +49,7 @@ input-label {
   max-width: 258px;
 }
 
-#check-button {
+#check-button , #proceed{
   background: var(--primary-color);
   border: none;
   color: #fff;
@@ -60,8 +58,11 @@ input-label {
   font-size: large;
   cursor: pointer;
   outline: #fff;
-  margin: auto;
   display: block;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
 }
 
 #error-message {
@@ -71,29 +72,21 @@ input-label {
 }
 
 /* Table */
-.change-table {
-  width: 50%;
-  text-align: justify;
+table {
+
+  width: 20rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 1.5rem;
   border-collapse: collapse;
-  margin: auto;
 }
-
-.change-table caption {
-  margin: 1rem auto;
-  font-size: x-large;
-  font-weight: 500;
+ th,td {
+  border: 2px solid black;
+   
 }
-
-th,
 td {
-  border: 2px solid var(--primary-color);
-  width: 0%;
-  border-collapse: collapse;
-  padding: 0.4rem;
+  padding: 0.5rem;
 }
-
-/* footer */
-
 footer {
   text-align: center;
 }
@@ -107,11 +100,7 @@ footer p {
   margin: 1rem;
 }
 
-/* a,
-li {
-  display: inline;
-}
- */
+
 #socials {
   display: flex;
   flex-direction : row;
@@ -119,7 +108,9 @@ li {
   width: 10%;
   margin-left: auto;
   margin-right:auto;
-
-  
- 
 }
+ #proceed { 
+  margin-top: 2rem;
+ }
+
+ 
